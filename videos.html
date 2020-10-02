@@ -39,43 +39,36 @@
       </li>
       </nav>
     </header>
+
     <header>
-      <article>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1>Bancos Relacionais</h1>
+        <article>
+           <div class="container">
+             <div class="row">
+               <div class="col">
+                h1>Bancos Relacionais</h1>
                 <h2>O Que É um Banco de Dados Relacional</h2>
            <p> Um banco de dados relacional é um tipo de banco de dados que armazena e
                    fornece acesso a pontos de dados relacionados entre si. Bancos de dados relacionais são baseados no modelo relacional, uma maneira intuitiva e direta de representar dados em tabelas. Em um banco de dados relacional, cada linha na tabela é um registro com uma ID exclusiva chamada chave. As colunas da tabela contêm atributos dos dados e cada registro geralmente
                    tem um valor para cada atributo, facilitando o estabelecimento das relações entre os pontos de dados.</p>
-            </div>
-            <div class="col">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/DudIYzThfPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h4>Como os Bancos de Dados Relacionais são Estruturados</h4>
-              <p>O modelo relacional significa que as estruturas de dados lógicas: tabelas de dados, exibições e índices são separadas das estruturas de armazenamento físico. Essa separação significa que os administradores de banco de dados podem gerenciar o armazenamento de dados físicos sem afetar o acesso a esses dados como uma estrutura lógica. Por exemplo, a renomeação de um arquivo de banco de dados não renomeia as tabelas armazenadas nele.
-                A distinção entre lógico e físico também se aplica às operações do banco de dados, que são ações claramente definidas que permitem aos aplicativos manipular os dados e as estruturas do banco de dados. As operações lógicas permitem que um aplicativo especifique o conteúdo necessário e as operações físicas determinam como esses dados devem ser acessados e, em seguida, executa a tarefa.
-                Para garantir que os dados sejam sempre precisos e acessíveis, os bancos de dados relacionais seguem determinadas regras de integridade. Por exemplo, uma regra de integridade pode especificar que linhas duplicadas não são permitidas em uma tabela para eliminar o potencial de informações errôneas que entram no banco de dados.</p>
-            </div>
-            <div class="col">
-              <h4>Um Exemplo de Banco de Dados Relacional</h4>
-              <div class="jumbotron">
-                Veja aqui um exemplo simples de duas tabelas que uma pequena empresa pode usar para processar
-                 pedidos de seus produtos. A primeira tabela é de informações do cliente, de forma que cada registro inclui o nome, endereço, informações de envio e faturamento, número de telefone e outras informações de contato de um cliente. Cada bit de informação (cada atributo) está em sua própria coluna, e o banco de dados atribui uma ID única (uma chave) a cada linha. Na segunda tabela, a de um pedido do cliente , cada registro inclui a ID do cliente que fez o pedido, o produto solicitado, a quantidade, o tamanho e a cor selecionados e assim por diante, mas não o nome ou as informações de contato.
-Essas duas tabelas têm apenas uma coisa em comum: a coluna ID (a chave). Mas por causa dessa coluna comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando o aplicativo de processamento de pedidos da empresa envia um pedido ao banco de dados, o banco de dados pode ir à tabela de pedidos do cliente, obter as informações corretas sobre o pedido do produto e usar a ID do cliente dessa tabela para procurar as informações de faturamento e envio do cliente na tabela de informações do cliente. O warehouse poderá obter o produto correto, o cliente receberá a entrega do pedido
- oportunamente e a empresa receberá o pagamento.
-            </div>
-          </div>
+                   <h4>Como os Bancos de Dados Relacionais são Estruturados</h4>
+                   <p>O modelo relacional significa que as estruturas de dados lógicas: tabelas de dados, exibições e índices são separadas das estruturas de armazenamento físico. Essa separação significa que os administradores de banco de dados podem gerenciar o armazenamento de dados físicos sem afetar o acesso a esses dados como uma estrutura lógica. Por exemplo, a renomeação de um arquivo de banco de dados não renomeia as tabelas armazenadas nele.
+                     A distinção entre lógico e físico também se aplica às operações do banco de dados, que são ações claramente definidas que permitem aos aplicativos manipular os dados e as estruturas do banco de dados. As operações lógicas permitem que um aplicativo especifique o conteúdo necessário e as operações físicas determinam como esses dados devem ser acessados e, em seguida, executa a tarefa.
+                     Para garantir que os dados sejam sempre precisos e acessíveis, os bancos de dados relacionais seguem determinadas regras de integridade. Por exemplo, uma regra de integridade pode especificar que linhas duplicadas não são permitidas em uma tabela para eliminar o potencial de informações errôneas que entram no banco de dados.</p>
+               </div>
 
-        </div>
-      </article>
+             </div>
+             <h4>Um Exemplo de Banco de Dados Relacional</h4>
+           
+              <p>Veja aqui um exemplo simples de duas tabelas que uma pequena empresa pode usar para processar
+                pedidos de seus produtos. A primeira tabela é de informações do cliente, de forma que cada registro inclui o nome, endereço, informações de envio e faturamento, número de telefone e outras informações de contato de um cliente. Cada bit de informação (cada atributo) está em sua própria coluna, e o banco de dados atribui uma ID única (uma chave) a cada linha. Na segunda tabela, a de um pedido do cliente , cada registro inclui a ID do cliente que fez o pedido, o produto solicitado, a quantidade, o tamanho e a cor selecionados e assim por diante, mas não o nome ou as informações de contato.
+Essas duas tabelas têm apenas uma coisa em comum: a coluna ID (a chave). Mas por causa dessa coluna comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando o aplicativo de processamento de pedidos da empresa envia um pedido ao banco de dados, o banco de dados pode ir à tabela de pedidos do cliente, obter as informações corretas sobre o pedido do produto e usar a ID do cliente dessa tabela para procurar as informações de faturamento e envio do cliente na tabela de informações do cliente. O warehouse poderá obter o produto correto, o cliente receberá a entrega do pedido
+oportunamente e a empresa receberá o pagamento.</p> 
+         <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DudIYzThfPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </p>
+        </article>
+        <button type="button" class="btn btn-primary">
+            <a href="./index.html">Voltar</a>
+        </button>
+           
     </header>
-   <footer>
-    <button type="button" class="btn btn-primary">
-      <a href="./index.html">Voltar</a>
-  </button>
-   </footer>
