@@ -1,0 +1,30 @@
+body
+{
+   background-color: black;
+}
+header
+{
+    text-align: center;
+}
+h1,h2,h4,h3
+{
+    text-align: center;
+    color: cadetblue;
+}
+p{
+    color: white;
+}
+img
+    {
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    a
+    {
+        color: white;
+    }
+   
+   
+   
