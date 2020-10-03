@@ -24,11 +24,29 @@ img
     a
     {
         color: white;
+        padding: 5px;
     }
     p
     {
         color: rgb(109, 168, 5);
     }
+    a:hover{
+        text-emphasis: none;
+            color: green;
+            padding: 1px;
+            font-size: 12pt;
+            border-radius: 1.8rem;
+        
+    }
+    .jumbotron{
+        padding: 10px;
+        
+    }
+    nav
+    {
+        padding: 10px;
+    }
+    
    
    
    
