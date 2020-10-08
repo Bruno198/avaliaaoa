@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./quiz.js">
+    <link rel="stylesheet icon" href="./img/1.png">
+    <title>Banco De Dados</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Banco De Dados</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./Sobre_Banco_de_dados.html">Sobre </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./videos.html">Bancos Relacionais </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./tabelas.html"> Tabelas </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./atribrutos_ou_campos.html">Atributos ou campos</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./registros.html">Registros </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./tipo_de_dados.html">Tipos de dados</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./chave_primaria.html">Chave-primária </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./linguagem_SQL.html">Linguagem SQL </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./banco_de_dados_MYSQL.html">Gerenciador de banco de dados MySQL </a>
+        </li>
+        
+        <li class="nav-item active">
+          <a class="nav-link" href="./quiz.html">QUIZ </a>
+        </li>
+        
+        
+        
+        
+      
+      
+    </div>
+  </nav>
+  <h1>QUIZ DE BANCO DE DADOS</h1>
+ 
+  <header>
+      <article>
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="jumbotron">
+                        <img src="./img/quiz.jpg" >
+                        <h3>pegunta 1</h3>
+                          <p> O Banco de dados é </p>
+                            <p> A - Conjuntos relacionados entre si</p> 
+                            <p>B - Um Banco para se sentar</p> 
+                            <p> C - Uma Giria Muito Utilizada
+                            </p> 
+                            <input type="text" id="letra" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="a()">Verificar</button>
+                            
+                            <h3>pegunta 2</h3>
+                            <p> A Linguagem SQL </p>
+                            <p> A - È uma linguagem de Marcaçao</p> 
+                            <p>B - E uma linguagen de programacão</p> 
+                            <p> C - È uma linguagem de Estilos
+                            </p> 
+                            <input type="text" id="pergunta2" placeholder="Digite Sua Resposta">
+                            
+                           
+                            <button type="button" class="btn btn-green" onclick="p2()">Verificar</button>
+                         
+                            <h3>pegunta 3</h3>
+                            <p> O Banco de dados é utilizado para armarzenar diversos tipo de </p>
+                            <p> A - Meias</p> 
+                            <p>B - Dados</p> 
+                            <p> C - informações
+                            </p> 
+                            <input type="text" id="pergunta3" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p3()">Verificar</button>
+                           
+                            <h3>pegunta 4</h3>
+                            <p> OS Campos de um Banco De Dados São chamados de </p>
+                            <p> A - Metodos</p> 
+                            <p>B -   atributos</p> 
+                            <p> C - indentificação
+                            </p> 
+                            <input type="text" id="pergunta4" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p4()">Verificar</button>
+                           
+                            <h3>pegunta 5</h3>
+                            <p> Para que serve os registros </p>
+                            <p> A -armazenar todos seus dados em um lugar especifico</p> 
+                            <p>B - para atrapralhar</p> 
+                            <p> C -registrar todos os dados na lixeira
+                            </p> 
+                            <input type="text" id="pergunta5" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p5()">Verificar</button>
+                           
+                            <h3>pegunta 6</h3>
+                            <p> Quantas tabelas podem existir em um banco de dados </p>
+                            <p> A - Uma</p> 
+                            <p>B -Centenas</p> 
+                            <p> C - sete
+                            </p> 
+                            <input type="text" id="pergunta6" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p6()">Verificar</button>
+                           
+                            <h3>pegunta 7</h3>
+                            <p> O MySQL tem suporte a tipos de </p>
+                            <p> A - flutuantes</p> 
+                            <p>B - onibos</p> 
+                            <p> C -  Tipos de dados que correspondem às classes OpenGIS.
+                             
+                            </p> 
+                            <input type="text" id="pergunta7" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p7()">Verificar</button>
+                           
+                            <h3>pegunta 8</h3> 
+                            <p> Podemos inserir uma chave primária </p>
+                            <p> A - no fim </p> 
+                            <p>B -no começo</p> 
+                            <p> C -  durante  ou após a criação da tabela
+                            </p> 
+                            <input type="text" id="pergunta8" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p8()">Verificar</button>
+                            
+                            <h3>pegunta 9</h3>
+                            <p> Os bancos de dados só armazenam dados </p>
+                            <p> A - diversar imformaçãos ,dados  e emails e muito mais</p> 
+                            <p>B - sim</p> 
+                            <p> C - talvez
+                            </p> 
+                            <input type="text" id="pergunta9" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p9()">Verificar</button>
+                           
+                            <h3>pegunta 10</h3>
+                            <p>O banco de dados SQl foi criado em que ano e por quem</p>
+                            <p> A - 2015 pela gogle</p> 
+                            <p>B - 1988 pela macrosoft</p> 
+                            <p> C - 2009 pelo fecebook
+                            </p> 
+                            <input type="text" id="pergunta10" placeholder="Digite Sua Resposta">
+                            <button type="button" class="btn btn-green" onclick="p10()">Verificar</button>
+                            <h1>Pontos</h1>
+                            <button type="button" class="btn btn-green" onclick="total_de_acertos()">Verificar meus POntos</button>
+                            <h1 id="totaldeacertos">...</h1>
+                      </div>
+                     
+                  </div>
+
+              </div>
+              
+          </div>
+          <button type="button" class="btn btn-primary">
+            <a href="./index.html">Voltar</a>
+        </button>
+          <script>
+             var acertos = 0 ;
+              function a(){
+               
+                 var i = document.getElementById('letra').value ;
+                 
+                 
+                  if( i == 'a' || i == 'A')
+                {
+                  alert("Resposta Correta");
+                 acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+                 
+              }
+              function p2(){
+                var p2 = document.getElementById('pergunta2').value ;
+              
+                if(p2 =='b' || p2 == 'B')
+                {
+                  alert("Resposta Correta" );
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p3(){
+                var p2 = document.getElementById('pergunta3').value ;
+                
+                if(p2 =='c' || p2 == 'C')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p4(){
+                var p2 = document.getElementById('pergunta4').value ;
+                
+                if(p2 =='b' || p2 == 'B')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p5(){
+                var p2 = document.getElementById('pergunta5').value ;
+               
+                if(p2 =='a' || p2 == 'A')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p6(){
+                var p2 = document.getElementById('pergunta6').value ;
+              
+                if(p2 =='b' || p2 == 'B')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p7(){
+                var p2 = document.getElementById('pergunta7').value ;
+               
+                if(p2 =='c' || p2 == 'C')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p8(){
+                var p2 = document.getElementById('pergunta8').value ;
+            
+                if(p2 =='c' || p2 == 'C')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p9(){
+                var p2 = document.getElementById('pergunta9').value ;
+             
+                if(p2 =='a' || p2 == 'A')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function p10(){
+                var p2 = document.getElementById('pergunta10').value ;
+           
+                if(p2 =='b' || p2 == 'B')
+                {
+                  alert("Resposta Correta");
+                  acertos++;
+                }
+                else
+                alert("Resposta Incorreta");
+              }
+              function total_de_acertos(){
+               var total_de_acertos =  document.getElementById('totaldeacertos').innerHTML = acertos ;
+               if(total_de_acertos >= 7 && total_de_acertos <= 10)
+               alert(' Parabéns você realmente conhece muito sobre este assunto.');
+               else if(total_de_acertos >= 4 && total_de_acertos <= 6)
+               alert(' Muito bem, você demonstrou conhecer um pouco sobre esse assunto.');
+               else if(total_de_acertos >= 0 && total_de_acertos <= 3)
+               alert(' Navegue neste site e adquira conhecimentos sobre esse assunto e depois tente novamente para verificar o que aprendeu.');
+              }
+             
+          </script>
+      </article>
+  </header>
