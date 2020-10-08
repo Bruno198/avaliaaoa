@@ -30,7 +30,7 @@
           <a class="nav-link" href="./videos.html">Bancos Relacionais </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="./Tabelas.html">Tabelas </a>
+          <a class="nav-link" href="./tabelas.html"> Tabelas </a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="./atribrutos_ou_campos.html">Atributos ou campos</a>
@@ -56,24 +56,51 @@
         <li class="nav-item active">
           <a class="nav-link" href="./quiz.html">QUIZ </a>
         </li>
+        
     </div>
   </nav>
-  <article>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Atributos ou campos</h1>
-                <p>As colunas de uma tabela são também chamadas de atributos.
-                     Ex.: O campo Nome, ou endereço de uma tabela de um BD relacional.</p>
-            </div>
-        </div>
-    </div>
-            </article>
-    
-  <footer>
-    <button type="button" class="btn btn-primary">
-        <a href="./index.html">Voltar</a>
-    </button>
-  </footer>
-    
- </header>
+  <header>
+      <article>
+          <h1>Chave primária</h1>
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <p>Chaves primárias (em inglês, Primary keys ou "PK"), sobre o ponto de vista de
+                           um banco de dados relacional, referem-se aos conjuntos de um ou mais campos, cujos valores, considerando a 
+                           combinação de valores em caso de mais de uma chave primária, nunca se repetem na mesma tabela e, desta forma,
+                            podem ser usadas como um índice de referência para criar relacionamentos com as demais tabela do banco de 
+                            dados (daí vem o nome banco de dados relacional). Portanto, uma chave primária nunca pode ter valor nulo, 
+                            nem repetição.
+
+                        Simplificando, quando a chave primária é simples, ou seja, é formada por um único campo da tabela, esse campo
+                         não pode ter dois ou mais registros de mesmo valor e também não pode conter nenhum registro nulo. Se a chave primária é composta, ou seja, formada por mais de um campo, os valores de cada campo podem se repetir, mas nunca a combinação desses valores. Exemplo: a tabela 'Livros_Autores' tem como chave primária (cod_livro, cod_autor). Podem existir nessa tabela os registros:
+                        
+                        (5, 9);
+                        (5, 10);
+                        (4, 9);
+                        (9, 5).
+                        mas não podem existir dois registros (5, 9).
+                        
+                        Ao criarmos uma chave primária, criamos automaticamente um índice do tipo aglomerado (CLUSTERED). Este é o tipo criado por padrão, mas caso já exista um índice desse tipo em sua 
+                        tabela, então é necessário ser criado um índice do tipo não-aglomerado (NONCLUSTERED).
+                        
+                        Podemos inserir uma chave primária durante 
+                        ou após a criação da tabela. Com a tabela já criada, o campo que
+                         escolhermos para ser a chave primária deve ter a opção NOT NULL adicionada. Para inserirmos durante 
+                         a criação usamos a seguinte sintaxe:</p>
+                         <div class="jumbotron">
+                            CREATE TABLE nome_tabela
+                            (
+                              Codigo int CONSTRAINT nome_constraint PRIMARY KEY CLUSTERED,
+                              Nome nvarchar(17)
+                            )
+                         </div>
+                  </div>
+
+              </div>
+              <button type="button" class="btn btn-primary">
+                <a href="./index.html">Voltar</a>
+              </button>
+          </div>
+      </article>
+  </header>

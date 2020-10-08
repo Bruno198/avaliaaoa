@@ -30,7 +30,7 @@
           <a class="nav-link" href="./videos.html">Bancos Relacionais </a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="./Tabelas.html">Tabelas </a>
+          <a class="nav-link" href="./tabelas.html"> Tabelas </a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="./atribrutos_ou_campos.html">Atributos ou campos</a>
@@ -56,24 +56,53 @@
         <li class="nav-item active">
           <a class="nav-link" href="./quiz.html">QUIZ </a>
         </li>
+        
     </div>
   </nav>
-  <article>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Atributos ou campos</h1>
-                <p>As colunas de uma tabela são também chamadas de atributos.
-                     Ex.: O campo Nome, ou endereço de uma tabela de um BD relacional.</p>
-            </div>
+  <header>
+      <article>
+          <h1>Tippos De Dados</h1>
+         <div class="container">
+             <div class="row">
+                 <div class="col">
+                   <p>Tipos de dados são uma forma de classificar as informações que serão armazenados no banco de dados.
+                    Entender os tipos de dados que podem ser armazenados no banco e a que situações se adequam é importante para projetar um banco de dados o mais eficiente possível. 
+                    Veja, a seguir, alguns dos tipos de dados mais comuns no MySQL, acompanhado de uma breve descrição.</p>
+
+                 </div>
+                 
+             </div>
+             <h3>Dados espaciais</h3>
+             <p>O MySQL tem suporte a tipos de dados que correspondem às classes OpenGIS.
+                  Alguns destes carregam valores geométricos simples:
+
+                GEOMETRY
+                POINT
+                LINESTRING
+                POLYGON
+                O GEOMETRY pode armazenar qualquer tipo de valor geométrico. Os outros valores simples 
+                (POINT, LINESTRING e POLYGON) têm 
+                seus valores restritos aos tipos geométricos a que se referem.
+                Os outros, que seguem listados, carregam valores relativos a coleções/coletivos:
+                
+                GEOMETRYCOLLECTION
+                MULTILINESTRING
+                MULTIPOINT
+                MULTIPOLYGON
+                Assim, GEOMETRYCOLLECTION pode armazenar 
+                coletâneas de objetos de qualquer tipo. Os outros tipos coletivos (MULTILINESTRING, 
+                MULTIPOLYGON e GEOMETRYCOLLECTION) restringem-se a cada forma geométrica particular.</p>
+
+
+        
+         <h3>Alguns Tipos Mais Utilizados</h3>
+         <p> 1 Oracle Database é o SGDB mais utilizado no mundo tipo_de_dados</p>
+         <p> 2 O SQL Server é um banco de dados relacional muito utilizado no mercado, criado pela Microsoft em 1988.</p>  
+           <p> 3 MySQL</p>
+         
         </div>
-    </div>
-            </article>
-    
-  <footer>
-    <button type="button" class="btn btn-primary">
+        
+      <button type="button" class="btn btn-primary">
         <a href="./index.html">Voltar</a>
-    </button>
-  </footer>
-    
- </header>
+      </article>
+  </header>
